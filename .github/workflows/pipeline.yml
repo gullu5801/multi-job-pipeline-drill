@@ -1,3 +1,4 @@
+# trigers: push, pull_request
 name: CI Pipeline
 
 on:
@@ -5,6 +6,7 @@ on:
     branches: ['*']
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   lint:
